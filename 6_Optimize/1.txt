@@ -1,0 +1,122 @@
+const int ZERO_1
+ZERO_1 = 0
+const int ONE_1
+ONE_1 = 1
+int var2_1
+var2_1 = 2
+int var3_1
+var3_1 = 3
+main: 
+Block_3: 
+print_str, 21373457\n
+if1: 
+temp_5 = var2_1
+temp_6 = 0+temp_5
+temp_7 = var3_1
+temp_8 = temp_7-1
+cmp temp_6 temp_8
+NEQ tmpLabel0
+cmp 1 0
+EQL tmpLabel0
+j if1stmt
+tmpLabel0: 
+j if1_END
+if1stmt: 
+Block_4: 
+if2: 
+cmp 0 0
+NEQ if2stmt
+cmp 1 0
+EQL tmpLabel1
+temp_9 = var2_1
+temp_10 = 2+temp_9
+cmp temp_10 0
+GEQ tmpLabel1
+j if2stmt
+tmpLabel1: 
+j ELSE2stmt
+if2stmt: 
+Block_5: 
+print_str, ERROR!\n
+Block_5end: 
+j if2_END
+ELSE2stmt: 
+Block_6: 
+print_str, And success!\n
+Block_6end: 
+if2_END: 
+Block_4end: 
+if1_END: 
+if3: 
+temp_11 = var3_1
+cmp temp_11 3
+NEQ if3stmt
+temp_12 = var2_1
+temp_13 = temp_12-22
+cmp temp_13 -20
+EQL if3stmt
+j if3_END
+if3stmt: 
+Block_7: 
+if4: 
+temp_14 = var3_1
+temp_15 = -4+temp_14
+temp_16 = var2_1
+temp_17 = temp_15+temp_16
+cmp temp_17 100
+LEQ if4stmt
+cmp 1 0
+NEQ if4stmt
+j if4_END
+if4stmt: 
+Block_8: 
+print_str, Or pass!\n
+Block_8end: 
+if4_END: 
+Block_7end: 
+if3_END: 
+print_str, Test1 Success!
+Block_9: 
+Block_9end: 
+call fun
+temp_18 = fun
+call fun
+temp_19 = fun
+call fun
+temp_20 = fun
+call fun
+temp_21 = fun
+call fun
+temp_22 = fun
+call fun
+temp_23 = fun
+ret 0
+Block_3end: 
+func_end
+fun: 
+Block_0: 
+int i_1
+i_1 = 1
+Block_1: 
+int yuming_1
+yuming_1 = 1
+for1: 
+temp_1 = yuming_1
+cmp temp_1 1000
+GEQ for1END
+for1STMT: 
+Block_2: 
+temp_2 = yuming_1
+temp_3 = temp_2*2
+yuming_1 = temp_3
+Block_2end: 
+for1CHANGE_VAL: 
+j for1
+for1END: 
+print_str, \n
+temp_4 = yuming_1
+print_int, temp_4
+Block_1end: 
+ret 
+Block_0end: 
+func_end

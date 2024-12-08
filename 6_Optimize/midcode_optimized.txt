@@ -1,0 +1,299 @@
+const int singleConstDecl_1
+singleConstDecl_1 = 23
+const int arrayConstDecl_1[3]
+arrayConstDecl_1[0] = 1
+arrayConstDecl_1[1] = 2
+arrayConstDecl_1[2] = 3
+const int array2ConstDecl_1[9]
+array2ConstDecl_1[0] = 1
+array2ConstDecl_1[1] = 2
+array2ConstDecl_1[2] = 3
+array2ConstDecl_1[3] = 1
+array2ConstDecl_1[4] = 2
+array2ConstDecl_1[5] = 3
+array2ConstDecl_1[6] = 1
+array2ConstDecl_1[7] = 2
+array2ConstDecl_1[8] = 3
+const int singleConstDecl_0_1
+singleConstDecl_0_1 = 13
+const int singleConstDecl_1_1
+singleConstDecl_1_1 = 3
+int singleVarDecl_1
+singleVarDecl_1 = -10
+int singleVarDecl_0_1
+singleVarDecl_0_1 = 23
+int singleVarDecl_1_1
+singleVarDecl_1_1 = 10
+int singleVarDecl_2_1
+int arrayVarDecl_1[3]
+arrayVarDecl_1[0] = -1
+arrayVarDecl_1[1] = 14
+arrayVarDecl_1[2] = 4
+int array2VarDecl_0_1[9]
+array2VarDecl_0_1[0] = 4
+array2VarDecl_0_1[1] = 3
+array2VarDecl_0_1[2] = 5
+array2VarDecl_0_1[3] = 1
+array2VarDecl_0_1[4] = 2
+array2VarDecl_0_1[5] = 3
+array2VarDecl_0_1[6] = 5
+array2VarDecl_0_1[7] = 4
+array2VarDecl_0_1[8] = 3
+int array_1_1[3]
+int array_2_1[9]
+************** func_main**************
+int a_2
+a_2 = 10
+int b_2
+int c_2
+int d_1
+int e_1
+b_2 = getint()
+c_2 = getint()
+d_1 = getint()
+e_1 = getint()
+if3: 
+cmp b_2 5
+GRE if3stmt
+j if3_END
+if3stmt: 
+b_2 = 5
+if3_END: 
+for3: 
+cmp a_2 0
+EQL for3END
+for3STMT: 
+temp_60 = a_2-1
+a_2 = temp_60
+if4: 
+cmp c_2 a_2
+GEQ if4stmt
+j if4_END
+if4stmt: 
+temp_63 = c_2
+temp_65 = a_2+1
+temp_66 = temp_63/temp_65
+temp_68 = temp_66+a_2
+c_2 = temp_68
+if4_END: 
+if5: 
+cmp d_1 a_2
+LEQ if5stmt
+j ELSE5stmt
+if5stmt: 
+temp_73 = d_1*a_2
+d_1 = temp_73
+j if5_END
+ELSE5stmt: 
+temp_74 = d_1
+temp_76 = a_2+3
+temp_77 = temp_74%temp_76
+d_1 = temp_77
+if5_END: 
+for4: 
+cmp e_1 d_1
+GEQ for4END
+for4STMT: 
+temp_82 = e_1+a_2
+e_1 = temp_82
+if6: 
+cmp e_1 b_2
+EQL if6stmt
+j if6_END
+if6stmt: 
+j for4END
+if6_END: 
+if7: 
+cmp e_1 c_2
+NEQ if7stmt
+j if7_END
+if7stmt: 
+temp_89 = c_2+e_1
+e_1 = temp_89
+j for4CHANGE_VAL
+if7_END: 
+for4CHANGE_VAL: 
+j for4
+for4END: 
+for3CHANGE_VAL: 
+j for3
+for3END: 
+if8: 
+temp_91 = 0!a_2
+cmp temp_91 0
+EQL if8_END
+if8stmt: 
+arrayVarDecl_1[0] = b_2
+temp_93 = b_2
+push temp_93
+call printInt
+temp_94 = printInt
+temp_97 = 0+a_2
+array2VarDecl_0_1[temp_97] = d_1
+temp_99 = c_2
+push temp_99
+call printInt
+temp_100 = printInt
+temp_102 = 2-a_2
+temp_104 = 0+temp_102
+array2VarDecl_0_1[temp_104] = c_2
+temp_106 = d_1
+push temp_106
+call printInt
+temp_107 = printInt
+arrayVarDecl_1[2] = e_1
+temp_109 = e_1
+push temp_109
+call printInt
+temp_110 = printInt
+if8_END: 
+int f_1
+temp_111 = e_1
+temp_112 = d_1
+push temp_111
+push temp_112
+call funcDef_1
+temp_113 = funcDef_1
+f_1 = temp_113
+int g_1
+temp_114 = f_1
+temp_115 = c_2
+push temp_115
+call funcDef_0
+temp_116 = funcDef_0
+push temp_114
+push temp_116
+call funcDef_1
+temp_117 = funcDef_1
+g_1 = temp_117
+call funcDef_void
+temp_118 = funcDef_void
+temp_119 = f_1
+push temp_119
+call printInt
+temp_120 = printInt
+temp_121 = g_1
+push temp_121
+call printInt
+temp_122 = printInt
+arrayVarDecl_1[1] = f_1
+array2VarDecl_0_1[8] = g_1
+temp_127 = singleVarDecl_1
+temp_128 = singleVarDecl_2_1
+push temp_127
+push temp_128
+call funcDef_1
+temp_129 = funcDef_1
+temp_130 = 13
+temp_131 = 3
+push temp_130
+push temp_131
+call funcDef_1
+temp_132 = funcDef_1
+push temp_129
+push temp_132
+call funcDef_1
+temp_133 = funcDef_1
+singleVarDecl_2_1 = temp_133
+temp_134 = singleVarDecl_2_1
+push temp_134
+call printInt
+temp_135 = printInt
+temp_137 = arrayVarDecl_1
+temp_138 = array2VarDecl_0_1
+temp_136 = 2
+push temp_136
+push temp_137
+push temp_138
+call sumarray
+temp_139 = sumarray
+push temp_139
+call printInt
+temp_140 = printInt
+ret 0
+************** func_funcDef_void**************
+ret 
+************** func_funcDef_0**************
+int ans_1
+temp_2 = var_1*10
+ans_1 = temp_2
+ret ans_1
+************** func_funcDef_1**************
+int a_1
+temp_6 = var1_1*var2_1
+a_1 = temp_6
+int b_1
+int c_1
+if1: 
+cmp var2_1 0
+NEQ if1stmt
+j ELSE1stmt
+if1stmt: 
+temp_8 = a_1
+temp_11 = var1_1%var2_1
+temp_12 = temp_8+temp_11
+b_1 = temp_12
+temp_15 = var1_1/var2_1
+c_1 = temp_15
+j if1_END
+ELSE1stmt: 
+temp_18 = a_1+var1_1
+b_1 = temp_18
+temp_20 = var1_1>>1
+c_1 = temp_20
+if1_END: 
+temp_23 = b_1-a_1
+b_1 = temp_23
+temp_26 = a_1+b_1
+if2: 
+cmp a_1 0
+LSS if2stmt
+j if2_END
+if2stmt: 
+temp_29 = 0-a_1
+a_1 = temp_29
+if2_END: 
+temp_31 = 1+a_1
+temp_34 = b_1+c_1
+temp_35 = temp_31*temp_34
+ret temp_35
+************** func_sumarray**************
+int i_1
+i_1 = 0
+int sum_1
+sum_1 = 0
+for1: 
+cmp i_1 3
+GEQ for1END
+for1STMT: 
+int j_1
+j_1 = 0
+for2: 
+cmp j_1 3
+GEQ for2END
+for2STMT: 
+temp_41 = sum_1+array1_1[i_1]
+temp_42 = i_1
+temp_43 = j_1
+temp_44 = temp_42*3
+temp_45 = temp_44+temp_43
+temp_47 = temp_41+array2_1[temp_45]
+sum_1 = temp_47
+temp_49 = j_1+1
+j_1 = temp_49
+for2CHANGE_VAL: 
+j for2
+for2END: 
+temp_51 = i_1+1
+i_1 = temp_51
+for1CHANGE_VAL: 
+j for1
+for1END: 
+temp_54 = sum_1*rate_1
+sum_1 = temp_54
+ret sum_1
+************** func_printInt**************
+print_str, print int : 
+print_int, var_2
+print_str, \n
+ret 

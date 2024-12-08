@@ -1,0 +1,1089 @@
+.data
+# const int singleConstDecl_1
+space0: .space 4
+# const int arrayConstDecl_1[3]
+space1: .space 12
+# const int array2ConstDecl_1[9]
+space2: .space 36
+# const int singleConstDecl_0_1
+space3: .space 4
+# const int singleConstDecl_1_1
+space4: .space 4
+# int singleVarDecl_1
+space5: .space 4
+# int singleVarDecl_0_1
+space6: .space 4
+# int singleVarDecl_1_1
+space7: .space 4
+# int singleVarDecl_2_1
+space8: .space 4
+# int arrayVarDecl_1[3]
+space9: .space 12
+# int array2VarDecl_0_1[9]
+space10: .space 36
+# int array_1_1[3]
+space11: .space 12
+# int array_2_1[9]
+space12: .space 36
+str0:.asciiz "print int : "
+str1:.asciiz "\n"
+.text
+# singleConstDecl_1 = 23
+li $t0, 23
+la $s0, space0
+sw $t0, 0($s0)
+# arrayConstDecl_1[0] = 1
+li $t0, 1
+la $t1, space1
+sw $t0, 0($t1)
+# arrayConstDecl_1[1] = 2
+li $t0, 2
+la $t1, space1
+sw $t0, 4($t1)
+# arrayConstDecl_1[2] = 3
+li $t0, 3
+la $t1, space1
+sw $t0, 8($t1)
+# array2ConstDecl_1[0] = 1
+li $t0, 1
+la $t1, space2
+sw $t0, 0($t1)
+# array2ConstDecl_1[1] = 2
+li $t0, 2
+la $t1, space2
+sw $t0, 4($t1)
+# array2ConstDecl_1[2] = 3
+li $t0, 3
+la $t1, space2
+sw $t0, 8($t1)
+# array2ConstDecl_1[3] = 1
+li $t0, 1
+la $t1, space2
+sw $t0, 12($t1)
+# array2ConstDecl_1[4] = 2
+li $t0, 2
+la $t1, space2
+sw $t0, 16($t1)
+# array2ConstDecl_1[5] = 3
+li $t0, 3
+la $t1, space2
+sw $t0, 20($t1)
+# array2ConstDecl_1[6] = 1
+li $t0, 1
+la $t1, space2
+sw $t0, 24($t1)
+# array2ConstDecl_1[7] = 2
+li $t0, 2
+la $t1, space2
+sw $t0, 28($t1)
+# array2ConstDecl_1[8] = 3
+li $t0, 3
+la $t1, space2
+sw $t0, 32($t1)
+# singleConstDecl_0_1 = 13
+li $t0, 13
+la $s0, space3
+sw $t0, 0($s0)
+# singleConstDecl_1_1 = 3
+li $t0, 3
+la $s0, space4
+sw $t0, 0($s0)
+# singleVarDecl_1 = -10
+li $t0, -10
+la $s0, space5
+sw $t0, 0($s0)
+# singleVarDecl_0_1 = 23
+li $t0, 23
+la $s0, space6
+sw $t0, 0($s0)
+# singleVarDecl_1_1 = 10
+li $t0, 10
+la $s0, space7
+sw $t0, 0($s0)
+# arrayVarDecl_1[0] = -1
+li $t0, -1
+la $t1, space9
+sw $t0, 0($t1)
+# arrayVarDecl_1[1] = 14
+li $t0, 14
+la $t1, space9
+sw $t0, 4($t1)
+# arrayVarDecl_1[2] = 4
+li $t0, 4
+la $t1, space9
+sw $t0, 8($t1)
+# array2VarDecl_0_1[0] = 4
+li $t0, 4
+la $t1, space10
+sw $t0, 0($t1)
+# array2VarDecl_0_1[1] = 3
+li $t0, 3
+la $t1, space10
+sw $t0, 4($t1)
+# array2VarDecl_0_1[2] = 5
+li $t0, 5
+la $t1, space10
+sw $t0, 8($t1)
+# array2VarDecl_0_1[3] = 1
+li $t0, 1
+la $t1, space10
+sw $t0, 12($t1)
+# array2VarDecl_0_1[4] = 2
+li $t0, 2
+la $t1, space10
+sw $t0, 16($t1)
+# array2VarDecl_0_1[5] = 3
+li $t0, 3
+la $t1, space10
+sw $t0, 20($t1)
+# array2VarDecl_0_1[6] = 5
+li $t0, 5
+la $t1, space10
+sw $t0, 24($t1)
+# array2VarDecl_0_1[7] = 4
+li $t0, 4
+la $t1, space10
+sw $t0, 28($t1)
+# array2VarDecl_0_1[8] = 3
+li $t0, 3
+la $t1, space10
+sw $t0, 32($t1)
+jal main
+li $v0, 10
+syscall 
+main: 
+addiu $sp, $sp, -456
+sw $ra, 0($sp)
+# int a_2
+# a_2 = 10
+li $t0, 10
+sw $t0, 4($sp)
+# int b_2
+# int c_2
+# int d_1
+# int e_1
+# b_2 = getint()
+li $v0, 5
+syscall 
+sw $v0, 8($sp)
+# c_2 = getint()
+li $v0, 5
+syscall 
+sw $v0, 12($sp)
+# d_1 = getint()
+li $v0, 5
+syscall 
+sw $v0, 16($sp)
+# e_1 = getint()
+li $v0, 5
+syscall 
+sw $v0, 20($sp)
+if3: 
+# temp_57 = b_2
+lw $t0, 8($sp)
+sw $t0, 24($sp)
+lw $s0, 24($sp)
+li $s1, 5
+bgt $s0 $s1 if3stmt
+j if3_END
+if3stmt: 
+# b_2 = 5
+li $t0, 5
+sw $t0, 8($sp)
+if3_END: 
+for3: 
+# temp_58 = a_2
+lw $t0, 4($sp)
+sw $t0, 28($sp)
+lw $s0, 28($sp)
+beqz $s0 for3END
+for3STMT: 
+# temp_59 = a_2
+lw $t0, 4($sp)
+sw $t0, 32($sp)
+# temp_60 = temp_59-1
+lw $t1, 32($sp)
+addiu $t0, $t1, -1
+sw $t0, 36($sp)
+# a_2 = temp_60
+lw $t0, 36($sp)
+sw $t0, 4($sp)
+if4: 
+# temp_61 = c_2
+lw $t0, 12($sp)
+sw $t0, 40($sp)
+# temp_62 = a_2
+lw $t0, 4($sp)
+sw $t0, 44($sp)
+lw $s0, 40($sp)
+lw $s1, 44($sp)
+bge $s0 $s1 if4stmt
+j if4_END
+if4stmt: 
+# temp_63 = c_2
+lw $t0, 12($sp)
+sw $t0, 48($sp)
+# temp_64 = a_2
+lw $t0, 4($sp)
+sw $t0, 52($sp)
+# temp_65 = temp_64+1
+lw $t1, 52($sp)
+addiu $t0, $t1, 1
+sw $t0, 56($sp)
+# temp_66 = temp_63/temp_65
+lw $t1, 48($sp)
+lw $t2, 56($sp)
+div $t1, $t2
+mflo $t1
+sw $t1, 60($sp)
+# temp_67 = a_2
+lw $t0, 4($sp)
+sw $t0, 64($sp)
+# temp_68 = temp_66+temp_67
+lw $t1, 60($sp)
+lw $t2, 64($sp)
+addu $t0, $t1, $t2
+sw $t0, 68($sp)
+# c_2 = temp_68
+lw $t0, 68($sp)
+sw $t0, 12($sp)
+if4_END: 
+if5: 
+# temp_69 = d_1
+lw $t0, 16($sp)
+sw $t0, 72($sp)
+# temp_70 = a_2
+lw $t0, 4($sp)
+sw $t0, 76($sp)
+lw $s0, 72($sp)
+lw $s1, 76($sp)
+ble $s0 $s1 if5stmt
+j ELSE5stmt
+if5stmt: 
+# temp_71 = d_1
+lw $t0, 16($sp)
+sw $t0, 80($sp)
+# temp_72 = a_2
+lw $t0, 4($sp)
+sw $t0, 84($sp)
+# temp_73 = temp_71*temp_72
+lw $t1, 80($sp)
+lw $t2, 84($sp)
+mult $t1, $t2
+mflo $t1
+sw $t1, 88($sp)
+# d_1 = temp_73
+lw $t0, 88($sp)
+sw $t0, 16($sp)
+j if5_END
+ELSE5stmt: 
+# temp_74 = d_1
+lw $t0, 16($sp)
+sw $t0, 92($sp)
+# temp_75 = a_2
+lw $t0, 4($sp)
+sw $t0, 96($sp)
+# temp_76 = temp_75+3
+lw $t1, 96($sp)
+addiu $t0, $t1, 3
+sw $t0, 100($sp)
+# temp_77 = temp_74%temp_76
+lw $t1, 92($sp)
+lw $t2, 100($sp)
+div $t1, $t2
+mfhi $t1
+sw $t1, 104($sp)
+# d_1 = temp_77
+lw $t0, 104($sp)
+sw $t0, 16($sp)
+if5_END: 
+for4: 
+# temp_78 = e_1
+lw $t0, 20($sp)
+sw $t0, 108($sp)
+# temp_79 = d_1
+lw $t0, 16($sp)
+sw $t0, 112($sp)
+lw $s0, 108($sp)
+lw $s1, 112($sp)
+bge $s0 $s1 for4END
+for4STMT: 
+# temp_80 = e_1
+lw $t0, 20($sp)
+sw $t0, 116($sp)
+# temp_81 = a_2
+lw $t0, 4($sp)
+sw $t0, 120($sp)
+# temp_82 = temp_80+temp_81
+lw $t1, 116($sp)
+lw $t2, 120($sp)
+addu $t0, $t1, $t2
+sw $t0, 124($sp)
+# e_1 = temp_82
+lw $t0, 124($sp)
+sw $t0, 20($sp)
+if6: 
+# temp_83 = e_1
+lw $t0, 20($sp)
+sw $t0, 128($sp)
+# temp_84 = b_2
+lw $t0, 8($sp)
+sw $t0, 132($sp)
+lw $s0, 128($sp)
+lw $s1, 132($sp)
+beq $s0 $s1 if6stmt
+j if6_END
+if6stmt: 
+j for4END
+if6_END: 
+if7: 
+# temp_85 = e_1
+lw $t0, 20($sp)
+sw $t0, 136($sp)
+# temp_86 = c_2
+lw $t0, 12($sp)
+sw $t0, 140($sp)
+lw $s0, 136($sp)
+lw $s1, 140($sp)
+bne $s0 $s1 if7stmt
+j if7_END
+if7stmt: 
+# temp_87 = c_2
+lw $t0, 12($sp)
+sw $t0, 144($sp)
+# temp_88 = e_1
+lw $t0, 20($sp)
+sw $t0, 148($sp)
+# temp_89 = temp_87+temp_88
+lw $t1, 144($sp)
+lw $t2, 148($sp)
+addu $t0, $t1, $t2
+sw $t0, 152($sp)
+# e_1 = temp_89
+lw $t0, 152($sp)
+sw $t0, 20($sp)
+j for4CHANGE_VAL
+if7_END: 
+for4CHANGE_VAL: 
+j for4
+for4END: 
+for3CHANGE_VAL: 
+j for3
+for3END: 
+if8: 
+# temp_90 = a_2
+lw $t0, 4($sp)
+sw $t0, 156($sp)
+# temp_91 = 0!temp_90
+lw $t1, 156($sp)
+seq $t0, $0, $t1
+sw $t0, 160($sp)
+lw $s0, 160($sp)
+beqz $s0 if8_END
+if8stmt: 
+# temp_92 = b_2
+lw $t0, 8($sp)
+sw $t0, 164($sp)
+# arrayVarDecl_1[0] = temp_92
+lw $t0, 164($sp)
+la $t1, space9
+sw $t0, 0($t1)
+# temp_93 = b_2
+lw $t0, 8($sp)
+sw $t0, 168($sp)
+# push temp_93
+lw $a0, 168($sp)
+# call printInt
+jal printInt
+lw $a0, 4($sp)
+lw $a1, 8($sp)
+lw $a2, 12($sp)
+lw $a3, 16($sp)
+# temp_94 = printInt
+move $t0, $v0
+sw $t0, 172($sp)
+# temp_95 = a_2
+lw $t0, 4($sp)
+sw $t0, 176($sp)
+# temp_96 = 3*0
+li $t1, 3
+li $t2, 0
+mult $t1, $t2
+mflo $t1
+sw $t1, 180($sp)
+# temp_97 = temp_96+temp_95
+lw $t1, 180($sp)
+lw $t2, 176($sp)
+addu $t0, $t1, $t2
+sw $t0, 184($sp)
+# temp_98 = d_1
+lw $t0, 16($sp)
+sw $t0, 188($sp)
+# array2VarDecl_0_1[temp_97] = temp_98
+lw $t0, 188($sp)
+la $t1, space10
+lw $t2, 184($sp)
+sll $t2, $t2, 2
+addu $t1, $t1, $t2
+sw $t0, 0($t1)
+# temp_99 = c_2
+lw $t0, 12($sp)
+sw $t0, 192($sp)
+# push temp_99
+lw $a0, 192($sp)
+# call printInt
+jal printInt
+lw $a0, 4($sp)
+lw $a1, 8($sp)
+lw $a2, 12($sp)
+lw $a3, 16($sp)
+# temp_100 = printInt
+move $t0, $v0
+sw $t0, 196($sp)
+# temp_101 = a_2
+lw $t0, 4($sp)
+sw $t0, 200($sp)
+# temp_102 = 2-temp_101
+li $t1, 2
+lw $t2, 200($sp)
+subu $t0, $t1, $t2
+sw $t0, 204($sp)
+# temp_103 = 3*0
+li $t1, 3
+li $t2, 0
+mult $t1, $t2
+mflo $t1
+sw $t1, 208($sp)
+# temp_104 = temp_103+temp_102
+lw $t1, 208($sp)
+lw $t2, 204($sp)
+addu $t0, $t1, $t2
+sw $t0, 212($sp)
+# temp_105 = c_2
+lw $t0, 12($sp)
+sw $t0, 216($sp)
+# array2VarDecl_0_1[temp_104] = temp_105
+lw $t0, 216($sp)
+la $t1, space10
+lw $t2, 212($sp)
+sll $t2, $t2, 2
+addu $t1, $t1, $t2
+sw $t0, 0($t1)
+# temp_106 = d_1
+lw $t0, 16($sp)
+sw $t0, 220($sp)
+# push temp_106
+lw $a0, 220($sp)
+# call printInt
+jal printInt
+lw $a0, 4($sp)
+lw $a1, 8($sp)
+lw $a2, 12($sp)
+lw $a3, 16($sp)
+# temp_107 = printInt
+move $t0, $v0
+sw $t0, 224($sp)
+# temp_108 = e_1
+lw $t0, 20($sp)
+sw $t0, 228($sp)
+# arrayVarDecl_1[2] = temp_108
+lw $t0, 228($sp)
+la $t1, space9
+sw $t0, 8($t1)
+# temp_109 = e_1
+lw $t0, 20($sp)
+sw $t0, 232($sp)
+# push temp_109
+lw $a0, 232($sp)
+# call printInt
+jal printInt
+lw $a0, 4($sp)
+lw $a1, 8($sp)
+lw $a2, 12($sp)
+lw $a3, 16($sp)
+# temp_110 = printInt
+move $t0, $v0
+sw $t0, 236($sp)
+if8_END: 
+# int f_1
+# temp_111 = e_1
+lw $t0, 20($sp)
+sw $t0, 244($sp)
+# temp_112 = d_1
+lw $t0, 16($sp)
+sw $t0, 248($sp)
+# push temp_111
+lw $a0, 244($sp)
+# push temp_112
+lw $a1, 248($sp)
+# call funcDef_1
+jal funcDef_1
+lw $a0, 4($sp)
+lw $a1, 8($sp)
+lw $a2, 12($sp)
+lw $a3, 16($sp)
+# temp_113 = funcDef_1
+move $t0, $v0
+sw $t0, 252($sp)
+# f_1 = temp_113
+lw $t0, 252($sp)
+sw $t0, 240($sp)
+# int g_1
+# temp_114 = f_1
+lw $t0, 240($sp)
+sw $t0, 260($sp)
+# temp_115 = c_2
+lw $t0, 12($sp)
+sw $t0, 264($sp)
+# push temp_115
+lw $a0, 264($sp)
+# call funcDef_0
+jal funcDef_0
+lw $a0, 4($sp)
+lw $a1, 8($sp)
+lw $a2, 12($sp)
+lw $a3, 16($sp)
+# temp_116 = funcDef_0
+move $t0, $v0
+sw $t0, 268($sp)
+# push temp_114
+lw $a0, 260($sp)
+# push temp_116
+lw $a1, 268($sp)
+# call funcDef_1
+jal funcDef_1
+lw $a0, 4($sp)
+lw $a1, 8($sp)
+lw $a2, 12($sp)
+lw $a3, 16($sp)
+# temp_117 = funcDef_1
+move $t0, $v0
+sw $t0, 272($sp)
+# g_1 = temp_117
+lw $t0, 272($sp)
+sw $t0, 256($sp)
+# call funcDef_void
+jal funcDef_void
+lw $a0, 4($sp)
+lw $a1, 8($sp)
+lw $a2, 12($sp)
+lw $a3, 16($sp)
+# temp_118 = funcDef_void
+move $t0, $v0
+sw $t0, 276($sp)
+# temp_119 = f_1
+lw $t0, 240($sp)
+sw $t0, 280($sp)
+# push temp_119
+lw $a0, 280($sp)
+# call printInt
+jal printInt
+lw $a0, 4($sp)
+lw $a1, 8($sp)
+lw $a2, 12($sp)
+lw $a3, 16($sp)
+# temp_120 = printInt
+move $t0, $v0
+sw $t0, 284($sp)
+# temp_121 = g_1
+lw $t0, 256($sp)
+sw $t0, 288($sp)
+# push temp_121
+lw $a0, 288($sp)
+# call printInt
+jal printInt
+lw $a0, 4($sp)
+lw $a1, 8($sp)
+lw $a2, 12($sp)
+lw $a3, 16($sp)
+# temp_122 = printInt
+move $t0, $v0
+sw $t0, 292($sp)
+# temp_123 = f_1
+lw $t0, 240($sp)
+sw $t0, 296($sp)
+# arrayVarDecl_1[1] = temp_123
+lw $t0, 296($sp)
+la $t1, space9
+sw $t0, 4($t1)
+# temp_124 = 3*2
+li $t1, 3
+li $t2, 2
+mult $t1, $t2
+mflo $t1
+sw $t1, 300($sp)
+# temp_125 = temp_124+2
+lw $t1, 300($sp)
+addiu $t0, $t1, 2
+sw $t0, 304($sp)
+# temp_126 = g_1
+lw $t0, 256($sp)
+sw $t0, 308($sp)
+# array2VarDecl_0_1[temp_125] = temp_126
+lw $t0, 308($sp)
+la $t1, space10
+lw $t2, 304($sp)
+sll $t2, $t2, 2
+addu $t1, $t1, $t2
+sw $t0, 0($t1)
+# temp_127 = singleVarDecl_1
+la $s0, space5
+lw $s0, 0($s0)
+sw $s0, 312($sp)
+# temp_128 = singleVarDecl_2_1
+la $s0, space8
+lw $s0, 0($s0)
+sw $s0, 316($sp)
+# push temp_127
+lw $a0, 312($sp)
+# push temp_128
+lw $a1, 316($sp)
+# call funcDef_1
+jal funcDef_1
+lw $a0, 4($sp)
+lw $a1, 8($sp)
+lw $a2, 12($sp)
+lw $a3, 16($sp)
+# temp_129 = funcDef_1
+move $t0, $v0
+sw $t0, 320($sp)
+# temp_130 = 13
+li $t0, 13
+sw $t0, 324($sp)
+# temp_131 = 3
+li $t0, 3
+sw $t0, 328($sp)
+# push temp_130
+lw $a0, 324($sp)
+# push temp_131
+lw $a1, 328($sp)
+# call funcDef_1
+jal funcDef_1
+lw $a0, 4($sp)
+lw $a1, 8($sp)
+lw $a2, 12($sp)
+lw $a3, 16($sp)
+# temp_132 = funcDef_1
+move $t0, $v0
+sw $t0, 332($sp)
+# push temp_129
+lw $a0, 320($sp)
+# push temp_132
+lw $a1, 332($sp)
+# call funcDef_1
+jal funcDef_1
+lw $a0, 4($sp)
+lw $a1, 8($sp)
+lw $a2, 12($sp)
+lw $a3, 16($sp)
+# temp_133 = funcDef_1
+move $t0, $v0
+sw $t0, 336($sp)
+# singleVarDecl_2_1 = temp_133
+lw $t0, 336($sp)
+la $s0, space8
+sw $t0, 0($s0)
+# temp_134 = singleVarDecl_2_1
+la $s0, space8
+lw $s0, 0($s0)
+sw $s0, 340($sp)
+# push temp_134
+lw $a0, 340($sp)
+# call printInt
+jal printInt
+lw $a0, 4($sp)
+lw $a1, 8($sp)
+lw $a2, 12($sp)
+lw $a3, 16($sp)
+# temp_135 = printInt
+move $t0, $v0
+sw $t0, 344($sp)
+# temp_137 = arrayVarDecl_1
+la $s0, space9
+sw $s0, 348($sp)
+# temp_138 = array2VarDecl_0_1
+la $s0, space10
+sw $s0, 352($sp)
+# temp_136 = 2
+li $t0, 2
+sw $t0, 356($sp)
+# push temp_136
+lw $a0, 356($sp)
+# push temp_137
+lw $a1, 348($sp)
+# push temp_138
+lw $a2, 352($sp)
+# call sumarray
+jal sumarray
+lw $a0, 4($sp)
+lw $a1, 8($sp)
+lw $a2, 12($sp)
+lw $a3, 16($sp)
+# temp_139 = sumarray
+move $t0, $v0
+sw $t0, 360($sp)
+# push temp_139
+lw $a0, 360($sp)
+# call printInt
+jal printInt
+lw $a0, 4($sp)
+lw $a1, 8($sp)
+lw $a2, 12($sp)
+lw $a3, 16($sp)
+# temp_140 = printInt
+move $t0, $v0
+sw $t0, 364($sp)
+# ret 0
+li $v0, 0
+lw $ra, 0($sp)
+addiu $sp, $sp, 456
+jr $ra
+funcDef_void: 
+# ret 
+addiu $sp, $sp, 0
+jr $ra
+funcDef_0: 
+addiu $sp, $sp, -20
+sw $a0, 0($sp)
+# int ans_1
+# temp_1 = var_1
+lw $t0, 0($sp)
+sw $t0, 8($sp)
+# temp_2 = temp_1*10
+lw $t1, 8($sp)
+li $t2, 10
+mult $t1, $t2
+mflo $t1
+sw $t1, 12($sp)
+# ans_1 = temp_2
+lw $t0, 12($sp)
+sw $t0, 4($sp)
+# temp_3 = ans_1
+lw $t0, 4($sp)
+sw $t0, 16($sp)
+# ret temp_3
+lw $v0, 16($sp)
+addiu $sp, $sp, 20
+jr $ra
+funcDef_1: 
+addiu $sp, $sp, -148
+sw $a0, 0($sp)
+sw $a1, 4($sp)
+# int a_1
+# temp_4 = var1_1
+lw $t0, 0($sp)
+sw $t0, 12($sp)
+# temp_5 = var2_1
+lw $t0, 4($sp)
+sw $t0, 16($sp)
+# temp_6 = temp_4*temp_5
+lw $t1, 12($sp)
+lw $t2, 16($sp)
+mult $t1, $t2
+mflo $t1
+sw $t1, 20($sp)
+# a_1 = temp_6
+lw $t0, 20($sp)
+sw $t0, 8($sp)
+# int b_1
+# int c_1
+if1: 
+# temp_7 = var2_1
+lw $t0, 4($sp)
+sw $t0, 32($sp)
+lw $s0, 32($sp)
+bnez $s0 if1stmt
+j ELSE1stmt
+if1stmt: 
+# temp_8 = a_1
+lw $t0, 8($sp)
+sw $t0, 36($sp)
+# temp_9 = var1_1
+lw $t0, 0($sp)
+sw $t0, 40($sp)
+# temp_10 = var2_1
+lw $t0, 4($sp)
+sw $t0, 44($sp)
+# temp_11 = temp_9%temp_10
+lw $t1, 40($sp)
+lw $t2, 44($sp)
+div $t1, $t2
+mfhi $t1
+sw $t1, 48($sp)
+# temp_12 = temp_8+temp_11
+lw $t1, 36($sp)
+lw $t2, 48($sp)
+addu $t0, $t1, $t2
+sw $t0, 52($sp)
+# b_1 = temp_12
+lw $t0, 52($sp)
+sw $t0, 24($sp)
+# temp_13 = var1_1
+lw $t0, 0($sp)
+sw $t0, 56($sp)
+# temp_14 = var2_1
+lw $t0, 4($sp)
+sw $t0, 60($sp)
+# temp_15 = temp_13/temp_14
+lw $t1, 56($sp)
+lw $t2, 60($sp)
+div $t1, $t2
+mflo $t1
+sw $t1, 64($sp)
+# c_1 = temp_15
+lw $t0, 64($sp)
+sw $t0, 28($sp)
+j if1_END
+ELSE1stmt: 
+# temp_16 = a_1
+lw $t0, 8($sp)
+sw $t0, 68($sp)
+# temp_17 = var1_1
+lw $t0, 0($sp)
+sw $t0, 72($sp)
+# temp_18 = temp_16+temp_17
+lw $t1, 68($sp)
+lw $t2, 72($sp)
+addu $t0, $t1, $t2
+sw $t0, 76($sp)
+# b_1 = temp_18
+lw $t0, 76($sp)
+sw $t0, 24($sp)
+# temp_19 = var1_1
+lw $t0, 0($sp)
+sw $t0, 80($sp)
+# temp_20 = temp_19/2
+lw $t1, 80($sp)
+li $t2, 2
+div $t1, $t2
+mflo $t1
+sw $t1, 84($sp)
+# c_1 = temp_20
+lw $t0, 84($sp)
+sw $t0, 28($sp)
+if1_END: 
+# temp_21 = b_1
+lw $t0, 24($sp)
+sw $t0, 88($sp)
+# temp_22 = a_1
+lw $t0, 8($sp)
+sw $t0, 92($sp)
+# temp_23 = temp_21-temp_22
+lw $t1, 88($sp)
+lw $t2, 92($sp)
+subu $t0, $t1, $t2
+sw $t0, 96($sp)
+# b_1 = temp_23
+lw $t0, 96($sp)
+sw $t0, 24($sp)
+# temp_24 = a_1
+lw $t0, 8($sp)
+sw $t0, 100($sp)
+# temp_25 = b_1
+lw $t0, 24($sp)
+sw $t0, 104($sp)
+# temp_26 = temp_24+temp_25
+lw $t1, 100($sp)
+lw $t2, 104($sp)
+addu $t0, $t1, $t2
+sw $t0, 108($sp)
+if2: 
+# temp_27 = a_1
+lw $t0, 8($sp)
+sw $t0, 112($sp)
+lw $s0, 112($sp)
+bltz $s0 if2stmt
+j if2_END
+if2stmt: 
+# temp_28 = a_1
+lw $t0, 8($sp)
+sw $t0, 116($sp)
+# temp_29 = 0-temp_28
+li $t1, 0
+lw $t2, 116($sp)
+subu $t0, $t1, $t2
+sw $t0, 120($sp)
+# a_1 = temp_29
+lw $t0, 120($sp)
+sw $t0, 8($sp)
+if2_END: 
+# temp_30 = a_1
+lw $t0, 8($sp)
+sw $t0, 124($sp)
+# temp_31 = 1+temp_30
+lw $t1, 124($sp)
+addiu $t0, $t1, 1
+sw $t0, 128($sp)
+# temp_32 = b_1
+lw $t0, 24($sp)
+sw $t0, 132($sp)
+# temp_33 = c_1
+lw $t0, 28($sp)
+sw $t0, 136($sp)
+# temp_34 = temp_32+temp_33
+lw $t1, 132($sp)
+lw $t2, 136($sp)
+addu $t0, $t1, $t2
+sw $t0, 140($sp)
+# temp_35 = temp_31*temp_34
+lw $t1, 128($sp)
+lw $t2, 140($sp)
+mult $t1, $t2
+mflo $t1
+sw $t1, 144($sp)
+# ret temp_35
+lw $v0, 144($sp)
+addiu $sp, $sp, 148
+jr $ra
+sumarray: 
+addiu $sp, $sp, -104
+sw $a0, 0($sp)
+sw $a1, 4($sp)
+sw $a2, 8($sp)
+# int i_1
+# i_1 = 0
+li $t0, 0
+sw $t0, 12($sp)
+# int sum_1
+# sum_1 = 0
+li $t0, 0
+sw $t0, 16($sp)
+for1: 
+# temp_36 = i_1
+lw $t0, 12($sp)
+sw $t0, 20($sp)
+lw $s0, 20($sp)
+li $s1, 3
+bge $s0 $s1 for1END
+for1STMT: 
+# int j_1
+# j_1 = 0
+li $t0, 0
+sw $t0, 24($sp)
+for2: 
+# temp_37 = j_1
+lw $t0, 24($sp)
+sw $t0, 28($sp)
+lw $s0, 28($sp)
+li $s1, 3
+bge $s0 $s1 for2END
+for2STMT: 
+# temp_38 = sum_1
+lw $t0, 16($sp)
+sw $t0, 32($sp)
+# temp_39 = i_1
+lw $t0, 12($sp)
+sw $t0, 36($sp)
+# temp_40 = array1_1[temp_39]
+lw $t0, 4($sp)
+lw $t1, 36($sp)
+sll $t1, $t1, 2
+addu $t0, $t0, $t1
+lw $t0, 0($t0)
+sw $t0, 40($sp)
+# temp_41 = temp_38+temp_40
+lw $t1, 32($sp)
+lw $t2, 40($sp)
+addu $t0, $t1, $t2
+sw $t0, 44($sp)
+# temp_42 = i_1
+lw $t0, 12($sp)
+sw $t0, 48($sp)
+# temp_43 = j_1
+lw $t0, 24($sp)
+sw $t0, 52($sp)
+# temp_44 = 3*temp_42
+li $t1, 3
+lw $t2, 48($sp)
+mult $t1, $t2
+mflo $t1
+sw $t1, 56($sp)
+# temp_45 = temp_44+temp_43
+lw $t1, 56($sp)
+lw $t2, 52($sp)
+addu $t0, $t1, $t2
+sw $t0, 60($sp)
+# temp_46 = array2_1[temp_45]
+lw $t0, 8($sp)
+lw $t1, 60($sp)
+sll $t1, $t1, 2
+addu $t0, $t0, $t1
+lw $t0, 0($t0)
+sw $t0, 64($sp)
+# temp_47 = temp_41+temp_46
+lw $t1, 44($sp)
+lw $t2, 64($sp)
+addu $t0, $t1, $t2
+sw $t0, 68($sp)
+# sum_1 = temp_47
+lw $t0, 68($sp)
+sw $t0, 16($sp)
+# temp_48 = j_1
+lw $t0, 24($sp)
+sw $t0, 72($sp)
+# temp_49 = temp_48+1
+lw $t1, 72($sp)
+addiu $t0, $t1, 1
+sw $t0, 76($sp)
+# j_1 = temp_49
+lw $t0, 76($sp)
+sw $t0, 24($sp)
+for2CHANGE_VAL: 
+j for2
+for2END: 
+# temp_50 = i_1
+lw $t0, 12($sp)
+sw $t0, 80($sp)
+# temp_51 = temp_50+1
+lw $t1, 80($sp)
+addiu $t0, $t1, 1
+sw $t0, 84($sp)
+# i_1 = temp_51
+lw $t0, 84($sp)
+sw $t0, 12($sp)
+for1CHANGE_VAL: 
+j for1
+for1END: 
+# temp_52 = sum_1
+lw $t0, 16($sp)
+sw $t0, 88($sp)
+# temp_53 = rate_1
+lw $t0, 0($sp)
+sw $t0, 92($sp)
+# temp_54 = temp_52*temp_53
+lw $t1, 88($sp)
+lw $t2, 92($sp)
+mult $t1, $t2
+mflo $t1
+sw $t1, 96($sp)
+# sum_1 = temp_54
+lw $t0, 96($sp)
+sw $t0, 16($sp)
+# temp_55 = sum_1
+lw $t0, 16($sp)
+sw $t0, 100($sp)
+# ret temp_55
+lw $v0, 100($sp)
+addiu $sp, $sp, 104
+jr $ra
+printInt: 
+addiu $sp, $sp, -8
+sw $a0, 0($sp)
+# print_str, print int : 
+li $v0, 4
+la $a0, str0
+syscall 
+# temp_56 = var_2
+lw $t0, 0($sp)
+sw $t0, 4($sp)
+# print_int, temp_56
+li $v0, 1
+lw $a0, 4($sp)
+syscall 
+# print_str, \n
+li $v0, 4
+la $a0, str1
+syscall 
+# ret 
+addiu $sp, $sp, 8
+jr $ra

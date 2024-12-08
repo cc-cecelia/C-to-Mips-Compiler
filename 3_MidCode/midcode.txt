@@ -1,0 +1,9 @@
+int a_1
+a_1 = 1
+int b_1
+temp_1 = 1+a_1
+b_1 = temp_1
+func_begin, main
+ret 0
+func_end
+

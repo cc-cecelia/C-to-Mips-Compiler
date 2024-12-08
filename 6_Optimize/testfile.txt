@@ -1,0 +1,5 @@
+int a;
+a = getint();
+int main() {
+    return 0;
+}

@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="992ac291-5654-4aaf-8938-5ab9fe1da0a0" name="更改" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/checkstyle-idea.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Target.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Compiler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Fronted/ASTComponent/AST.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Fronted/ASTComponent/AddExp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Fronted/ASTComponent/BType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Fronted/ASTComponent/Block.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Fronted/ASTComponent/BlockItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Fronted/ASTComponent/CmpExp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Fronted/ASTComponent/CmpType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Fronted/ASTComponent/CompUnit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Fronted/ASTComponent/Cond.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Fronted/ASTComponent/ConstDecl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Fronted/ASTComponent/ConstDef.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Fronted/ASTComponent/ConstExp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Fronted/ASTComponent/ConstInitVal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Fronted/ASTComponent/Decl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Fronted/ASTComponent/EqExp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Fronted/ASTComponent/Exp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Fronted/ASTComponent/ForStmt.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Fronted/ASTComponent/FormatString.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Fronted/ASTComponent/FuncDef.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Fronted/ASTComponent/FuncFParam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Fronted/ASTComponent/FuncFParams.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Fronted/ASTComponent/FuncRParams.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Fronted/ASTComponent/FuncType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Fronted/ASTComponent/InitVal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Fronted/ASTComponent/LAndExp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Fronted/ASTComponent/LOrExp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Fronted/ASTComponent/LVal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Fronted/ASTComponent/MainFuncDef.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Fronted/ASTComponent/MulExp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Fronted/ASTComponent/Number.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Fronted/ASTComponent/PrimaryExp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Fronted/ASTComponent/RelExp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Fronted/ASTComponent/Stmt.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Fronted/ASTComponent/UnaryExp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Fronted/ASTComponent/UnaryOp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Fronted/ASTComponent/VarDecl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Fronted/ASTComponent/VarDef.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Fronted/Error/Err.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Fronted/Error/ErrHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Fronted/Error/ErrType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Fronted/Lexer/LexType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Fronted/Lexer/Lexer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Fronted/Lexer/MyCharacter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Fronted/Lexer/Token.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Fronted/Parser/Judge.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Fronted/Parser/ParseType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Fronted/Parser/Parser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Fronted/Parser/SymbleTable/Func/CallingTable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Fronted/Parser/SymbleTable/Func/FuncParam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Fronted/Parser/SymbleTable/Func/SymFuncType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Fronted/Parser/SymbleTable/FuncSymbol.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Fronted/Parser/SymbleTable/Symbol.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Fronted/Parser/SymbleTable/SymbolTable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Fronted/Parser/SymbleTable/TablesController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Fronted/Parser/SymbleTable/VarSymbol.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/IO/Output.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MidCode/IRModule.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MidCode/Instructions/Calculate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MidCode/Instructions/CallFunc.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MidCode/Instructions/Compare.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MidCode/Instructions/FuncHead.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MidCode/Instructions/Function.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MidCode/Instructions/Goto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MidCode/Instructions/Input.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MidCode/Instructions/Instruction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MidCode/Instructions/Label.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MidCode/Instructions/MemCpy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MidCode/Instructions/ParamDef.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MidCode/Instructions/Print.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MidCode/Instructions/PrintInt.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MidCode/Instructions/PrintStr.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MidCode/Instructions/PushParam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MidCode/Instructions/Return.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MidCode/Instructions/ValAssign.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MidCode/Instructions/Var0Def.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MidCode/Instructions/Var1Def.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MidCode/Instructions/Var2Def.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MidCode/Instructions/VarDef.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MidCode/MidGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MidCode/Table/FuncSymbol.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MidCode/Table/MidController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MidCode/Table/MidSymbolTable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MidCode/Table/MidType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MidCode/Table/Symbol.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MidCode/Table/SymbolType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MidCode/Table/VarSymbol.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MidCode/Value/BoolValue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MidCode/Value/FuncValue/BType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MidCode/Value/FuncValue/Params.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MidCode/Value/IntegerValue/IntegerType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MidCode/Value/IntegerValue/IntegerValue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MidCode/Value/PointerValue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MidCode/Value/StringValue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MidCode/Value/SymbolValue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MidCode/Value/Value.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Target/Assembler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Target/GRF/GRF.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Target/GRF/Register.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Target/Immediate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Target/Instructions/Alu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Target/Instructions/Annotation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Target/Instructions/Asciiz.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Target/Instructions/Branch.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Target/Instructions/InstrType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Target/Instructions/Jump.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Target/Instructions/Label.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Target/Instructions/Load.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Target/Instructions/MD.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Target/Instructions/MF.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Target/Instructions/MipsCode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Target/Instructions/Move.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Target/Instructions/Space.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Target/Instructions/Store.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Target/Instructions/Syscall.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Target/Instructions/Word.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Target/Operand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Target/Symbol/MipsController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Target/Symbol/MipsSymbol.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Target/Tag.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/VirtualMachine/VM.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="2YIGyuQ0gLSKtE6TzyqZKMAwpXr" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Lab/DASFAA/DataProcesser&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.uml&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\C_Compiler\Target\src" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Compiler" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Compiler" />
+      <module name="Target" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="应用程序.Compiler" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="992ac291-5654-4aaf-8938-5ab9fe1da0a0" name="更改" comment="" />
+      <created>1700205938967</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1700205938967</updated>
+      <workItem from="1700205940179" duration="114202000" />
+      <workItem from="1700699323304" duration="1396000" />
+      <workItem from="1700794399959" duration="136549000" />
+      <workItem from="1702456131045" duration="21796000" />
+      <workItem from="1702558192804" duration="32761000" />
+      <workItem from="1703071380839" duration="9778000" />
+      <workItem from="1703353596298" duration="727000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/MidCode/Instructions/ValAssign.java</url>
+          <line>60</line>
+          <option name="timeStamp" value="234" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <condition expression="varDef == null" language="JAVA" />
+          <url>file://$PROJECT_DIR$/src/Fronted/ASTComponent/VarDecl.java</url>
+          <line>40</line>
+          <option name="timeStamp" value="344" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Fronted/ASTComponent/MainFuncDef.java</url>
+          <line>61</line>
+          <option name="timeStamp" value="348" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/Fronted/Parser/Parser.java</url>
+          <line>799</line>
+          <properties class="Fronted.Parser.Parser" method="_CtrlFlow">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="331" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/Fronted/Parser/SymbleTable/TablesController.java</url>
+          <line>80</line>
+          <properties class="Fronted.Parser.SymbleTable.TablesController" method="examNewFunc">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="356" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="instruction" />
+        <watch expression="((Lexer)this).linePos" custom="Fronted.Lexer.Lexer" />
+        <watch expression="lexer.now" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>

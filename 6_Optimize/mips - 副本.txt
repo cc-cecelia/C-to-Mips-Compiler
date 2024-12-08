@@ -1,0 +1,280 @@
+.data
+# const int ZERO_1
+space0: .space 4
+# const int ONE_1
+space1: .space 4
+# int var2_1
+space2: .space 4
+# int var3_1
+space3: .space 4
+str0:.asciiz "\n"
+str1:.asciiz "21373457\n"
+str2:.asciiz "ERROR!\n"
+str3:.asciiz "And success!\n"
+str4:.asciiz "Or pass!\n"
+str5:.asciiz "Test1 Success!"
+.text
+# ZERO_1 = 0
+li $t0, 0
+la $s0, space0
+sw $t0, 0($s0)
+# ONE_1 = 1
+li $t0, 1
+la $s0, space1
+sw $t0, 0($s0)
+# var2_1 = 2
+li $t0, 2
+la $s0, space2
+sw $t0, 0($s0)
+# var3_1 = 3
+li $t0, 3
+la $s0, space3
+sw $t0, 0($s0)
+jal main
+li $v0, 10
+syscall 
+main: 
+addi $sp, $sp, -80
+sw $ra, 0($sp)
+Block_3: 
+# print_str, 21373457\n
+li $v0, 4
+la $a0, str1
+syscall 
+if1: 
+# temp_5 = var2_1
+la $s0, space2
+lw $s0, 0($s0)
+sw $s0, 4($sp)
+# temp_6 = 0+temp_5
+lw $t1, 4($sp)
+addi $t0, $t1, 0
+sw $t0, 8($sp)
+# temp_7 = var3_1
+la $s0, space3
+lw $s0, 0($s0)
+sw $s0, 12($sp)
+# temp_8 = temp_7-1
+lw $t1, 12($sp)
+addi $t0, $t1, -1
+sw $t0, 16($sp)
+lw $s0, 8($sp)
+lw $s1, 16($sp)
+bne $s0 $s1 tmpLabel0
+li $s0, 1
+beqz $s0 tmpLabel0
+j if1stmt
+tmpLabel0: 
+j if1_END
+if1stmt: 
+Block_4: 
+if2: 
+bnez $0 if2stmt
+li $s0, 1
+beqz $s0 tmpLabel1
+# temp_9 = var2_1
+la $s0, space2
+lw $s0, 0($s0)
+sw $s0, 20($sp)
+# temp_10 = 2+temp_9
+lw $t1, 20($sp)
+addi $t0, $t1, 2
+sw $t0, 24($sp)
+lw $s0, 24($sp)
+bgez $s0 tmpLabel1
+j if2stmt
+tmpLabel1: 
+j ELSE2stmt
+if2stmt: 
+Block_5: 
+# print_str, ERROR!\n
+li $v0, 4
+la $a0, str2
+syscall 
+Block_5end: 
+j if2_END
+ELSE2stmt: 
+Block_6: 
+# print_str, And success!\n
+li $v0, 4
+la $a0, str3
+syscall 
+Block_6end: 
+if2_END: 
+Block_4end: 
+if1_END: 
+if3: 
+# temp_11 = var3_1
+la $s0, space3
+lw $s0, 0($s0)
+sw $s0, 28($sp)
+lw $s0, 28($sp)
+li $s1, 3
+bne $s0 $s1 if3stmt
+# temp_12 = var2_1
+la $s0, space2
+lw $s0, 0($s0)
+sw $s0, 32($sp)
+# temp_13 = temp_12-22
+lw $t1, 32($sp)
+addi $t0, $t1, -22
+sw $t0, 36($sp)
+lw $s0, 36($sp)
+li $s1, -20
+beq $s0 $s1 if3stmt
+j if3_END
+if3stmt: 
+Block_7: 
+if4: 
+# temp_14 = var3_1
+la $s0, space3
+lw $s0, 0($s0)
+sw $s0, 40($sp)
+# temp_15 = -4+temp_14
+lw $t1, 40($sp)
+addi $t0, $t1, -4
+sw $t0, 44($sp)
+# temp_16 = var2_1
+la $s0, space2
+lw $s0, 0($s0)
+sw $s0, 48($sp)
+# temp_17 = temp_15+temp_16
+lw $t1, 44($sp)
+lw $t2, 48($sp)
+add $t0, $t1, $t2
+sw $t0, 52($sp)
+lw $s0, 52($sp)
+li $s1, 100
+ble $s0 $s1 if4stmt
+li $s0, 1
+bnez $s0 if4stmt
+j if4_END
+if4stmt: 
+Block_8: 
+# print_str, Or pass!\n
+li $v0, 4
+la $a0, str4
+syscall 
+Block_8end: 
+if4_END: 
+Block_7end: 
+if3_END: 
+# print_str, Test1 Success!
+li $v0, 4
+la $a0, str5
+syscall 
+Block_9: 
+Block_9end: 
+# call fun
+jal fun
+lw $a0, 4($sp)
+lw $a1, 8($sp)
+lw $a2, 12($sp)
+lw $a3, 16($sp)
+# temp_18 = fun
+move $t0, $v0
+sw $t0, 56($sp)
+# call fun
+jal fun
+lw $a0, 4($sp)
+lw $a1, 8($sp)
+lw $a2, 12($sp)
+lw $a3, 16($sp)
+# temp_19 = fun
+move $t0, $v0
+sw $t0, 60($sp)
+# call fun
+jal fun
+lw $a0, 4($sp)
+lw $a1, 8($sp)
+lw $a2, 12($sp)
+lw $a3, 16($sp)
+# temp_20 = fun
+move $t0, $v0
+sw $t0, 64($sp)
+# call fun
+jal fun
+lw $a0, 4($sp)
+lw $a1, 8($sp)
+lw $a2, 12($sp)
+lw $a3, 16($sp)
+# temp_21 = fun
+move $t0, $v0
+sw $t0, 68($sp)
+# call fun
+jal fun
+lw $a0, 4($sp)
+lw $a1, 8($sp)
+lw $a2, 12($sp)
+lw $a3, 16($sp)
+# temp_22 = fun
+move $t0, $v0
+sw $t0, 72($sp)
+# call fun
+jal fun
+lw $a0, 4($sp)
+lw $a1, 8($sp)
+lw $a2, 12($sp)
+lw $a3, 16($sp)
+# temp_23 = fun
+move $t0, $v0
+sw $t0, 76($sp)
+# ret 0
+li $v0, 0
+lw $ra, 0($sp)
+addiu $sp, $sp, 80
+jr $ra
+Block_3end: 
+fun: 
+addi $sp, $sp, -24
+Block_0: 
+# int i_1
+# i_1 = 1
+li $t0, 1
+sw $t0, 0($sp)
+Block_1: 
+# int yuming_1
+# yuming_1 = 1
+li $t0, 1
+sw $t0, 4($sp)
+for1: 
+# temp_1 = yuming_1
+lw $t0, 4($sp)
+sw $t0, 8($sp)
+lw $s0, 8($sp)
+li $s1, 1000
+bge $s0 $s1 for1END
+for1STMT: 
+Block_2: 
+# temp_2 = yuming_1
+lw $t0, 4($sp)
+sw $t0, 12($sp)
+# temp_3 = temp_2*2
+lw $t1, 12($sp)
+li $t2, 2
+mult $t1, $t2
+mflo $t1
+sw $t1, 16($sp)
+# yuming_1 = temp_3
+lw $t0, 16($sp)
+sw $t0, 4($sp)
+Block_2end: 
+for1CHANGE_VAL: 
+j for1
+for1END: 
+# print_str, \n
+li $v0, 4
+la $a0, str0
+syscall 
+# temp_4 = yuming_1
+lw $t0, 4($sp)
+sw $t0, 20($sp)
+# print_int, temp_4
+li $v0, 1
+lw $a0, 20($sp)
+syscall 
+Block_1end: 
+# ret 
+addiu $sp, $sp, 24
+jr $ra
+Block_0end: 

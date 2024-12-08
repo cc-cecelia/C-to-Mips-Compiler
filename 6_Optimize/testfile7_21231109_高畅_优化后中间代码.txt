@@ -1,0 +1,196 @@
+const int N_1
+N_1 = 10
+int a_1[10]
+a_1[0] = 0
+a_1[1] = 1
+a_1[2] = 2
+a_1[3] = 3
+a_1[4] = 4
+a_1[5] = 5
+a_1[6] = 6
+a_1[7] = 7
+a_1[8] = 8
+a_1[9] = 9
+main: 
+Block_3: 
+int i_2
+i_2 = 2
+int j_1
+j_1 = 5
+const int a1_1
+a1_1 = 1
+const int a2_1
+a2_1 = 2
+i_2 = getint()
+j_1 = getint()
+temp_10 = i_2
+temp_11 = j_1
+temp_12 = temp_10*temp_11
+temp_13 = 0-temp_12
+temp_14 = 4
+push temp_14
+call fib
+temp_15 = fib
+temp_16 = temp_13*temp_15
+temp_17 = temp_16+0
+temp_18 = a_1[1]
+temp_19 = temp_18*1
+temp_20 = temp_17+temp_19
+temp_21 = temp_20-0
+temp_22 = temp_21*5
+i_2 = temp_22
+temp_23 = 5
+push temp_23
+call fib
+temp_24 = fib
+temp_25 = temp_24+2
+push temp_25
+call fib
+temp_26 = fib
+temp_27 = 1197-temp_26
+temp_28 = temp_27+-10091
+j_1 = temp_28
+int k_1
+k_1 = -6
+for1: 
+temp_29 = i_2
+cmp temp_29 100
+GEQ for1END
+for1STMT: 
+Block_4: 
+temp_30 = a_1[0]
+temp_31 = k_1
+temp_32 = k_1
+temp_33 = temp_31*temp_32
+temp_34 = temp_30+temp_33
+a_1[0] = temp_34
+temp_35 = a_1[1]
+temp_36 = k_1
+temp_37 = k_1
+temp_38 = temp_36*temp_37
+temp_39 = temp_35+temp_38
+a_1[1] = temp_39
+temp_40 = a_1[2]
+temp_41 = k_1
+temp_42 = k_1
+temp_43 = temp_41*temp_42
+temp_44 = temp_40+temp_43
+a_1[2] = temp_44
+temp_45 = a_1[3]
+temp_46 = k_1
+temp_47 = k_1
+temp_48 = temp_46*temp_47
+temp_49 = temp_45+temp_48
+a_1[3] = temp_49
+temp_50 = a_1[4]
+temp_51 = k_1
+temp_52 = k_1
+temp_53 = temp_51*temp_52
+temp_54 = temp_50+temp_53
+a_1[4] = temp_54
+temp_55 = a_1[5]
+temp_56 = k_1
+temp_57 = k_1
+temp_58 = temp_56*temp_57
+temp_59 = temp_55+temp_58
+a_1[5] = temp_59
+temp_60 = a_1[6]
+temp_61 = k_1
+temp_62 = k_1
+temp_63 = temp_61*temp_62
+temp_64 = temp_60+temp_63
+a_1[6] = temp_64
+temp_65 = a_1[7]
+temp_66 = k_1
+temp_67 = k_1
+temp_68 = temp_66*temp_67
+temp_69 = temp_65+temp_68
+a_1[7] = temp_69
+temp_70 = a_1[8]
+temp_71 = k_1
+temp_72 = k_1
+temp_73 = temp_71*temp_72
+temp_74 = temp_70+temp_73
+a_1[8] = temp_74
+temp_75 = a_1[9]
+temp_76 = k_1
+temp_77 = k_1
+temp_78 = temp_76*temp_77
+temp_79 = temp_75+temp_78
+a_1[9] = temp_79
+Block_4end: 
+for1CHANGE_VAL: 
+temp_80 = i_2
+temp_81 = temp_80+1
+i_2 = temp_81
+j for1
+for1END: 
+i_2 = 0
+for2: 
+temp_82 = i_2
+cmp temp_82 10
+GEQ for2END
+for2STMT: 
+Block_5: 
+print_str, 
+temp_83 = i_2
+temp_84 = a_1[temp_83]
+print_int, temp_84
+print_str, , 
+temp_85 = i_2
+temp_86 = temp_85+1
+i_2 = temp_86
+Block_5end: 
+for2CHANGE_VAL: 
+j for2
+for2END: 
+print_str, \n
+temp_87 = i_2
+print_int, temp_87
+print_str, , 
+temp_88 = j_1
+print_int, temp_88
+print_str, , 
+temp_89 = k_1
+print_int, temp_89
+print_str, \n
+ret 0
+Block_3end: 
+func_end
+fib: 
+param_int i_1
+Block_0: 
+if1: 
+temp_1 = i_1
+cmp temp_1 1
+EQL if1stmt
+j if1_END
+if1stmt: 
+Block_1: 
+ret 1
+Block_1end: 
+if1_END: 
+if2: 
+temp_2 = i_1
+cmp temp_2 2
+EQL if2stmt
+j if2_END
+if2stmt: 
+Block_2: 
+ret 2
+Block_2end: 
+if2_END: 
+temp_3 = i_1
+temp_4 = temp_3-1
+push temp_4
+call fib
+temp_5 = fib
+temp_6 = i_1
+temp_7 = temp_6-2
+push temp_7
+call fib
+temp_8 = fib
+temp_9 = temp_5+temp_8
+ret temp_9
+Block_0end: 
+func_end
