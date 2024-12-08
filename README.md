@@ -1,6 +1,6 @@
 # C-to-Mips Compiler
 
-This individual project(2023 Fall) is a compiler that translates modified C language code into executable MIPS assembly language. The compiler is implemented entirely in Java and does not require additional dependencies or tools to run.
+This individual project(2023 Fall) is a compiler that translates modified C language code into executable MIPS assembly language, with 8000+ lines of java code in total(6_optimize). 
 
 ## Folders
 
